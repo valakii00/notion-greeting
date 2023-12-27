@@ -44,14 +44,12 @@ body{
 
     var greet;
 
-    if (hrs >= 10 && hrs <= 5)
+    if (hrs < 10)
         greet = 'Guten Morgen  ';
     else if (hrs >= 10 && hrs <= 17)
         greet = 'Guten Tag ';
     else if (hrs >= 17 && hrs <= 24)
         greet = 'Guten Abend  ';
-    else if (hrs >= 6 && hrs <= 0)
-        greet = 'Gute Nacht  ';
 
     document.getElementById('lbl').innerHTML =
         greet+= "Rain  " +`<div id="date"> Heute ist ${date}</div>`;
